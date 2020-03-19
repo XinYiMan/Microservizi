@@ -1,0 +1,63 @@
+object FPWebModule1: TFPWebModule1
+  OldCreateOrder = False
+  Actions = <  
+    item
+      Name = 'login'
+      Default = False
+      OnRequest = loginRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'info'
+      Default = True
+      OnRequest = infoRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'select'
+      Default = False
+      OnRequest = selectRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'execute'
+      Default = False
+      OnRequest = executeRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'script'
+      Default = False
+      OnRequest = scriptRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'manual'
+      Default = False
+      OnRequest = manualRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'diagnostic'
+      Default = False
+      OnRequest = diagnosticRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'getfieldfromtable'
+      Default = False
+      OnRequest = getfieldfromtableRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'current_timestamp'
+      Default = False
+      OnRequest = current_timestampRequest
+      Template.AllowTagParams = False
+    end>
+  CreateSession = False
+  Height = 225
+  HorizontalOffset = 801
+  VerticalOffset = 297
+  Width = 228
+end

@@ -1,0 +1,67 @@
+object FrmTextSearch: TFrmTextSearch
+  Left = 612
+  Height = 108
+  Top = 420
+  Width = 478
+  BorderIcons = [biSystemMenu]
+  Caption = 'FrmTextSearch'
+  ClientHeight = 108
+  ClientWidth = 478
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '2.1.0.0'
+  object Txt_Search: TEdit
+    Left = 8
+    Height = 22
+    Top = 40
+    Width = 464
+    Anchors = [akTop, akLeft, akRight]
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+  end
+  object Cmb_Type: TComboBox
+    Left = 8
+    Height = 20
+    Top = 8
+    Width = 320
+    Anchors = [akTop, akLeft, akRight]
+    ItemHeight = 26
+    ParentShowHint = False
+    ShowHint = True
+    Style = csDropDownList
+    TabOrder = 1
+    Text = '0'
+  end
+  object Btn_Abort: TButton
+    Left = 8
+    Height = 25
+    Top = 72
+    Width = 104
+    Caption = 'Btn_Abort'
+    OnClick = Btn_AbortClick
+    TabOrder = 2
+  end
+  object Btn_Ok: TButton
+    Left = 368
+    Height = 25
+    Top = 72
+    Width = 104
+    Anchors = [akTop, akRight]
+    Caption = 'Btn_Ok'
+    OnClick = Btn_OkClick
+    TabOrder = 3
+  end
+  object Chk_CaseSensitive: TCheckBox
+    Left = 343
+    Height = 18
+    Top = 8
+    Width = 129
+    Anchors = [akTop, akRight]
+    Caption = 'Chk_CaseSensitive'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 4
+  end
+end

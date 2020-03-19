@@ -1,0 +1,128 @@
+object Form1: TForm1
+  Left = 525
+  Height = 406
+  Top = 276
+  Width = 735
+  Caption = 'Form1'
+  ClientHeight = 406
+  ClientWidth = 735
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.1.0.0'
+  object Edit1: TEdit
+    Left = 8
+    Height = 34
+    Top = 10
+    Width = 216
+    TabOrder = 0
+    Text = 'http://localhost:9092/'
+  end
+  object Txt_CustomPassword: TEdit
+    Left = 240
+    Height = 34
+    Top = 10
+    Width = 215
+    TabOrder = 1
+    Text = '1234helloWorld'
+  end
+  object Txt_Position: TEdit
+    Left = 8
+    Height = 34
+    Top = 72
+    Width = 256
+    TabOrder = 2
+    Text = 'Position1'
+  end
+  object Txt_SessionId: TEdit
+    Left = 8
+    Height = 34
+    Top = 104
+    Width = 256
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 202
+    Top = 197
+    Width = 720
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 4
+  end
+  object Txt_TypeMessage: TEdit
+    Left = 8
+    Height = 34
+    Top = 136
+    Width = 80
+    TabOrder = 5
+    Text = 'MSG'
+  end
+  object Txt_Message: TEdit
+    Left = 104
+    Height = 34
+    Top = 136
+    Width = 256
+    NumbersOnly = True
+    TabOrder = 6
+    Text = 'Message'
+  end
+  object Txt_Destination: TEdit
+    Left = 376
+    Height = 34
+    Top = 136
+    Width = 80
+    TabOrder = 7
+    Text = 'Position2'
+  end
+  object BtnSendMessage: TButton
+    Left = 480
+    Height = 25
+    Top = 136
+    Width = 120
+    Caption = 'Send Message'
+    OnClick = BtnSendMessageClick
+    TabOrder = 8
+  end
+  inline FramethreadMessageClient1: TFramethreadMessageClient
+    Left = 679
+    Top = 12
+    TabOrder = 9
+    Visible = True
+  end
+  object Btn_Start: TButton
+    Left = 472
+    Height = 25
+    Top = 10
+    Width = 75
+    Caption = 'Start'
+    OnClick = Btn_StartClick
+    TabOrder = 10
+  end
+  object Btn_End: TButton
+    Left = 560
+    Height = 25
+    Top = 10
+    Width = 75
+    Caption = 'End'
+    OnClick = Btn_EndClick
+    TabOrder = 11
+  end
+  object CheckBox1: TCheckBox
+    Left = 480
+    Height = 23
+    Top = 168
+    Width = 96
+    Caption = 'Loop send'
+    TabOrder = 12
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 200
+    OnTimer = Timer1Timer
+    Left = 524
+    Top = 60
+  end
+end

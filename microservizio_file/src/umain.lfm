@@ -1,0 +1,94 @@
+object FPWebModule1: TFPWebModule1
+  OldCreateOrder = False
+  Actions = <  
+    item
+      Name = 'login'
+      Default = False
+      OnRequest = loginRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'info'
+      Default = True
+      OnRequest = infoRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'manual'
+      Default = False
+      OnRequest = manualRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'diagnostic'
+      Default = False
+      OnRequest = diagnosticRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'fileexists'
+      Default = False
+      OnRequest = fileexistsRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'direxists'
+      Default = False
+      OnRequest = direxistsRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'uploadfile'
+      Default = False
+      OnRequest = uploadfileRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'downloadfile'
+      Default = False
+      OnRequest = downloadfileRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'dircontent'
+      Default = False
+      OnRequest = dircontentRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'dirseparator'
+      Default = False
+      OnRequest = dirseparatorRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'createdir'
+      Default = False
+      OnRequest = createdirRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'freediskspace'
+      Default = False
+      OnRequest = freediskspaceRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'deletefile'
+      Default = False
+      OnRequest = deleteFileRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'deletedir'
+      Default = False
+      OnRequest = deletedirRequest
+      Template.AllowTagParams = False
+    end>
+  OnRequest = DataModuleRequest
+  CreateSession = False
+  Height = 225
+  HorizontalOffset = 801
+  VerticalOffset = 297
+  Width = 228
+end

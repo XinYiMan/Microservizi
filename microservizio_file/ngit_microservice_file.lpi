@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="ngit_microservice_file"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="dcpcrypt"/>
+      </Item>
+      <Item>
+        <PackageName Value="WebLaz"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="ngit_microservice_file.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/umain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPWebModule1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="uMain"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/other_library/ungitjsondataset.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uNGITJsonDataSet"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/other_library/jwt_unit/ngit_crypto_jwt.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/uconsts.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uConsts"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/unotes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uNotes"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/uextended_fphttpapp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uExtended_fphttpapp"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/other_library/ugenericfunctions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uGenericFunctions"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/other_library/uerrorclass.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uErrorClass"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/other_library/uCryptFunction.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/other_library/ufunctionbase64.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/other_library/udatetimetostr.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uDateTimeToStr"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="bin/$(TargetCPU)-$(TargetOS)/ngit_microservice_file"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="src;src/other_library;src/other_library/jwt_unit"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <StripSymbols Value="True"/>
+        <UseExternalDbgSyms Value="True"/>
+      </Debugging>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-dUseCThreads"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,7 @@
+Sotto windows devi inserire le dll nella cartella dell'eseguibile.
+
+Puoi trovare qui le varie versioni: https://indy.fulgan.com/SSL/
+Io per i miei test ho usato la versione: https://indy.fulgan.com/SSL/openssl-1.0.2q-i386-win32.zip
+
+Ricordati che per il server https openssl su windows salva i certificati in c:\temp\ 
+La cartella deve esistere per funzionare. Se non esiste creala a mano.

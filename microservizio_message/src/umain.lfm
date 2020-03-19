@@ -1,0 +1,51 @@
+object FPWebModule1: TFPWebModule1
+  OldCreateOrder = False
+  Actions = <  
+    item
+      Name = 'login'
+      Default = False
+      OnRequest = loginRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'info'
+      Default = True
+      OnRequest = infoRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'manual'
+      Default = False
+      OnRequest = manualRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'diagnostic'
+      Default = False
+      OnRequest = diagnosticRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'sendmessage'
+      Default = False
+      OnRequest = sendmessageRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'viewmessages'
+      Default = False
+      OnRequest = viewmessagesRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'logout'
+      Default = False
+      OnRequest = logoutRequest
+      Template.AllowTagParams = False
+    end>
+  CreateSession = False
+  Height = 225
+  HorizontalOffset = 801
+  VerticalOffset = 297
+  Width = 228
+end

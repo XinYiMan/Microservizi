@@ -1,0 +1,67 @@
+object FrmNumericSearch: TFrmNumericSearch
+  Left = 592
+  Height = 139
+  Top = 370
+  Width = 538
+  BorderIcons = [biSystemMenu]
+  Caption = 'FrmNumericSearch'
+  ClientHeight = 139
+  ClientWidth = 538
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '2.1.0.0'
+  object Cmb_Type: TComboBox
+    Left = 8
+    Height = 20
+    Top = 8
+    Width = 520
+    Anchors = [akTop, akLeft, akRight]
+    ItemHeight = 26
+    OnChange = Cmb_TypeChange
+    Style = csDropDownList
+    TabOrder = 0
+    Text = '0'
+  end
+  object Txt_Da: TEdit
+    Left = 8
+    Height = 22
+    Top = 40
+    Width = 520
+    Alignment = taCenter
+    Anchors = [akTop, akLeft, akRight]
+    OnChange = Txt_DaChange
+    TabOrder = 1
+    Text = '0.00'
+  end
+  object Txt_A: TEdit
+    Left = 8
+    Height = 22
+    Top = 72
+    Width = 520
+    Alignment = taCenter
+    Anchors = [akTop, akLeft, akRight]
+    Enabled = False
+    OnChange = Txt_AChange
+    TabOrder = 2
+    Text = '0.00'
+  end
+  object Btn_Abort: TButton
+    Left = 8
+    Height = 25
+    Top = 104
+    Width = 115
+    Caption = 'Btn_Abort'
+    OnClick = Btn_AbortClick
+    TabOrder = 3
+  end
+  object Btn_Ok: TButton
+    Left = 413
+    Height = 25
+    Top = 104
+    Width = 115
+    Anchors = [akTop, akRight]
+    Caption = 'Btn_Ok'
+    OnClick = Btn_OkClick
+    TabOrder = 4
+  end
+end

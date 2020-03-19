@@ -1,0 +1,15 @@
+Guida per attivare SSL a RSQL su Mac OS X
+
+ su mac:
+    brew install openssl (che installerà in /usr/local/Cellar/openssl/VER/ nel mio caso /usr/local/Cellar/openssl/1.0.2s/)
+    poi linko le libreria con dei link simbolici nella cartella dove risiede il mio eseguibile
+    ln -s /usr/local/Cellar/openssl/1.0.2s/lib/libssl.dylib libssl.dylib
+    ln -s /usr/local/Cellar/openssl/1.0.2s/lib/libcrypto.1.0.0.dylib libcrypto.1.0.0.dylib
+    ln -s /usr/local/Cellar/openssl/1.0.2s/lib/libcrypto.dylib libcrypto.dylib
+    ln -s /usr/local/Cellar/openssl/1.0.2s/lib/libssl.1.0.0.dylib libssl.1.0.0.dylib
+
+Per testare se funziona correttamente
+
+curl -d "{\"username\":\"postgres\",\"password\":\"wwwpostgres\"}" -X POST -k https://localhost:8091
+
+sudo tcpdump -s 0 -A -i lo0 'tcp port 8091 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'

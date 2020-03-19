@@ -1,0 +1,219 @@
+object Form1: TForm1
+  Left = 525
+  Height = 406
+  Top = 276
+  Width = 735
+  Caption = 'Form1'
+  ClientHeight = 406
+  ClientWidth = 735
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.1.0.0'
+  object Edit1: TEdit
+    Left = 8
+    Height = 22
+    Top = 10
+    Width = 216
+    TabOrder = 0
+    Text = 'http://localhost:9090/'
+  end
+  object Button1: TButton
+    Left = 240
+    Height = 25
+    Top = 10
+    Width = 75
+    Caption = 'Info'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Memo1: TMemo
+    Left = 9
+    Height = 224
+    Top = 136
+    Width = 319
+    Anchors = [akTop, akLeft, akBottom]
+    Lines.Strings = (
+      'Memo1'
+    )
+    ScrollBars = ssAutoBoth
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 328
+    Height = 25
+    Top = 10
+    Width = 75
+    Caption = 'Login'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Button3: TButton
+    Left = 240
+    Height = 25
+    Top = 41
+    Width = 75
+    Caption = 'Select'
+    OnClick = Button3Click
+    TabOrder = 4
+  end
+  object Edit2: TEdit
+    Left = 8
+    Height = 22
+    Hint = 'Your select query'
+    Top = 41
+    Width = 216
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 5
+    Text = 'select id_utente, username, livello from utenti where id_utente = 62;'
+    TextHint = 'Your select query'
+  end
+  object Button4: TButton
+    Left = 240
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Execute'
+    OnClick = Button4Click
+    TabOrder = 6
+  end
+  object Edit3: TEdit
+    Left = 8
+    Height = 22
+    Hint = 'Your update query'
+    Top = 72
+    Width = 216
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 7
+    Text = 'update utenti set username = ''francescosammarco1'' where id_utente = 62;'
+    TextHint = 'Your update query'
+  end
+  object Button5: TButton
+    Left = 328
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Script'
+    OnClick = Button5Click
+    TabOrder = 8
+  end
+  object Button6: TButton
+    Left = 328
+    Height = 25
+    Top = 41
+    Width = 99
+    Caption = 'Diagnostic'
+    OnClick = Button6Click
+    TabOrder = 9
+  end
+  object Button7: TButton
+    Left = 456
+    Height = 25
+    Top = 41
+    Width = 75
+    Caption = 'Manual'
+    OnClick = Button7Click
+    TabOrder = 10
+  end
+  object StringGrid1: TStringGrid
+    Left = 336
+    Height = 224
+    Top = 136
+    Width = 392
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabOrder = 11
+  end
+  object Label1: TLabel
+    Left = 9
+    Height = 16
+    Top = 368
+    Width = 33
+    Anchors = [akLeft, akBottom]
+    Caption = 'Field:'
+    ParentColor = False
+  end
+  object Txt_Field: TEdit
+    Left = 56
+    Height = 22
+    Top = 368
+    Width = 80
+    Anchors = [akLeft, akBottom]
+    TabOrder = 12
+  end
+  object Label2: TLabel
+    Left = 152
+    Height = 16
+    Top = 368
+    Width = 37
+    Anchors = [akLeft, akBottom]
+    Caption = 'Table:'
+    ParentColor = False
+  end
+  object Txt_Table: TEdit
+    Left = 205
+    Height = 22
+    Top = 368
+    Width = 80
+    Anchors = [akLeft, akBottom]
+    TabOrder = 13
+  end
+  object Label3: TLabel
+    Left = 296
+    Height = 16
+    Top = 368
+    Width = 62
+    Anchors = [akLeft, akBottom]
+    Caption = 'Condition:'
+    ParentColor = False
+  end
+  object Txt_Condition: TEdit
+    Left = 368
+    Height = 22
+    Top = 368
+    Width = 80
+    Anchors = [akLeft, akBottom]
+    TabOrder = 14
+  end
+  object Button8: TButton
+    Left = 464
+    Height = 25
+    Top = 368
+    Width = 176
+    Anchors = [akLeft, akBottom]
+    Caption = 'Get Field From Table'
+    OnClick = Button8Click
+    TabOrder = 15
+  end
+  object Txt_CustomPassword: TEdit
+    Left = 9
+    Height = 22
+    Top = 104
+    Width = 215
+    TabOrder = 16
+    Text = '1234helloWorld'
+  end
+  object Button9: TButton
+    Left = 416
+    Height = 25
+    Top = 10
+    Width = 75
+    Caption = 'LogOut'
+    OnClick = Button9Click
+    TabOrder = 17
+  end
+  object Button10: TButton
+    Left = 440
+    Height = 25
+    Top = 72
+    Width = 136
+    Caption = 'Current timestamp'
+    OnClick = Button10Click
+    TabOrder = 18
+  end
+  object BufDataset1: TBufDataset
+    FieldDefs = <>
+    Left = 440
+    Top = 153
+  end
+end
